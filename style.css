@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.medsos{
+    padding:12px 0;
+    background-color:#363636;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+.container:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.gambar{
+    width: 90%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-bottom: auto;
+}
+.gambar .foto img{
+    width: 125px;
+    border-radius: 10px;
+}
+.foto{
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10 px;
+
+}
+.foto a{
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    background: #363636;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #363636;
+}
+header ul{
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a{
+    padding:25px 20px;
+    display: inline-block;
+}
+header ul li a:hover{
+    background-color: #363636;
+    color: #fff
+}
+.active{
+    background-color:#363636;
+    color:#363636
+}
+.banner{
+    height:80vh;
+    border:1x solid;
+    background-image: url("bu.jpg");
+    background-size: cover;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.banner::after{
+    content:" ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #251f77; */
+}
+.banner h2{
+    color:#fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+section{
+    padding: 50px 0;
+}
+section h3{
+    text-align: center;
+    padding:20px 0;
+    color:#363636;
+    margin-bottom: 25px;
+}
+.about,
+.servis{
+    padding-bottom: 100px;
+}
+.about p{
+    color:rgb(41, 42, 43);
+    word-spacing: 2px;
+    line-height:25px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.servis{
+    background-color: #F6F7F7;
+}
+.box{
+    color: #363636;
+}
+.box::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.box .col-4{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.icon{
+    width:70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.box .col-4 h4{
+    margin: 20px 0;
+}
+footer{
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.lebel{
+    background-color: #24D5B3;
+    color:#fff;
+}
+/* /Product BukuKita/ */
+.featured_boks{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.featured_boks h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+.featured_boks .featured_book_box{
+    width: 95%;
+    height: 70vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.featured_boks .featured_book_box .featured_book_card{
+    width: 270px;
+    height: 435px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+    background-color: #ececec;
+}
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px #4a4a5f;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+     color: #919191;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categoris{
+     color: #080808;
+     margin-top: 8px;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+     margin-top: 8px;
+     font-weight: bold;
+     margin-bottom: 15px;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+     font-weight: 100;
+     padding: 0 5px;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+     padding: 10px 20px;
+     border: 2px solid #446972;
+     text-decoration: none;
+     color: #000;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+   box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+
+}
+::-webkit-scrollbar-thumb{
+    background: #4a5657;
+    border-radius: 10px;
+}
+
